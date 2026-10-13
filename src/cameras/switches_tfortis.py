@@ -18,7 +18,7 @@ import subprocess
 
 
 
-# ⬇️ ДОБАВЬ ЭТОТ КОД ДЛЯ АВТОМАТИЧЕСКОГО СКРЫТИЯ ВСЕХ CMD ОКОН
+
 _original_subprocess_run = subprocess.run
 
 def _silent_subprocess_run(*args, **kwargs):
@@ -767,7 +767,7 @@ class TFortisWindow:
     def safe_get(self, url):
         """Безопасный HTTP-запрос с обработкой 'Incorrect auth request'"""
         max_attempts = 3  # Уменьшаем количество попыток для скорости
-        credentials = [('admin', '1qazXSW2'), (None, None)]  # Сначала с авторизацией, потом без
+        credentials = [('', ''), (None, None)]  # Сначала с авторизацией, потом без
         
         for auth in credentials:
             attempt = 0
