@@ -23,8 +23,8 @@ class HikvisionWindow:
         self.master.geometry("1000x800")
         
         # Параметры по умолчанию
-        self.username = 'admin'
-        self.password = '1qazXSW2'
+        self.username = ''
+        self.password = ''
         self.stop_scan = False
         self.running = False
         
