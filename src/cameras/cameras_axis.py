@@ -23,8 +23,8 @@ class AxisWindow:
         self.master.geometry("1000x800")
         
         # Параметры по умолчанию
-        self.username = 'root'
-        self.password = '1qazXSW2'
+        self.username = ''
+        self.password = ''
         self.stop_scan = False
         self.running = False
         self.ip_ranges = []
